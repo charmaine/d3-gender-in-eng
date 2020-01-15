@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<!-- Favicon + Apple + Android Touch Icons -->
+		<link rel="shortcut icon" type="image/png" href="./assets/favicon.ico"/>
+
+		<title>Dandi</title>
+		<link rel="stylesheet" type="text/css" href="./index.css">
+
+		<!-- jQuery and lodash -->
+		<script src="./vis/src/jquery-3.3.1.slim.min.js"></script>
+		<script src="./vis/src/lodash-4.17.11.min.js"></script>
+
+		<!-- d3.js -->
+		<script src="./vis/src/d3.min.js"></script>
+		<script src="./vis/src/d3.tip.js"></script>
+
+		<!-- Our visualization code -->
+		<script src="./vis/v1.js"></script>
+
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.full.min.js"></script>
+
+	</head>
+	<body>
+    <nav>
+      <span class="icon">&#x2600;</span>
+      <label class="switch">
+        <input id="switch-slider" type="checkbox" onclick="changeTheme()">
+        <span class="slider round"></span>
+      </label>
+      <span class="icon">&#x263E;</span>
+    </nav>
+		<div class="flex-container">
+			<div class="flex-text">
+        <h3 class="main">&#x2728; Diversity in Engineering</h3>
+				</script>
+				<br>
+				<div id="search"></div>
+				<div class="container">
+
+					<!-- Our d3.js visualization will appear in #chart -->
+					<div id="chart"></div>
+		 		</div>
+			</div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-83432528-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+@font-face {
+	font-family: 'Sofia Pro';
+	font-weight: 100;
+	src: url('../assets/Sofia Pro Ultra Light.otf')
+}
+
+@font-face {
+	font-family: 'Sofia Pro';
+	font-weight: 500;
+	src: url('../assets/Sofia Pro Medium.otf')
+}
+
+body {
+	font-family: 'Sofia Pro', sans-serif;
+	background-color: #FFF;
+	color: #303030;
+	line-height: 1vh;
+	transition: .4s;
+	font-size: 10px;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #3999FF;
+}
+
+.select2-selection__rendered {
+	font-size: 16px;
+}
+
+a:active, a:hover {
+	color: #303030;
+	text-decoration: underline;
+	text-decoration-color: #3999FF;
+}
+
+nav {
+	text-align: right;
+}
+
+.select2-results__option {
+	color: black;
+}
+
+.flex-container {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: left;
+  	align-items: center;
+  	height: 90vh;
+  	font-size: 4.4vw;
+  	letter-spacing: 0.03rem;
+  	font-weight: 100;
+		padding-left: 20vh;
+		padding-top: 0vh;
+}
+
+.flex-text {
+	max-width: 380px;
+	line-height: 2rem;
+}
+
+.social-media {
+	word-spacing: 3vw;
+}
+
+.main {
+	font-weight: 500;
+	line-height: 1.8rem;
+}
+
+.dark-theme {
+	background-color: #282C35;
+	color: #FFF;
+	transition: .4s;
+}
+
+.dark-theme a, .dark-theme a:visited {
+	color: #FFC72C;
+}
+
+.dark-theme a:active, .dark-theme a:hover {
+	color: #f7f7f7;
+	text-decoration-color: #FFC72C;
+}
+
+span.icon {
+	display: inline-block;
+	position: relative;
+	top:12px;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 24px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #DDD;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 4px;
+	bottom: 4px;
+	background-color: #FFF;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+	transform: translateX(36px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+@media only screen and (min-width: 600px) {
+	.flex-container {
+		font-size: 1.6rem;
+	}
+
+	.flex-text {
+		max-width: 500px;
+		line-height: 2.4rem;
+	}
+
+	.main {
+		font-size: 2rem;
+		line-height: 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.flex-text {
+		max-width: 600px;
+		line-height: 2.6rem;
+	}
+}
